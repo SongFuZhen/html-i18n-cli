@@ -21,7 +21,7 @@ npm i -g yarn
 ``` sh
 npm run parse test/test.html
 
-// yarn parse test/test.html
+// 或 yarn parse test/test.html
 ```
 
 2. 翻译 JSON 文件
