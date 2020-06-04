@@ -7,6 +7,8 @@
     "html": "bin/html.js"
   },
   "scripts": {
+    "parse": "node ./bin/html.js parse ",
+    "trans": "node ./bin/html.js translate ",
     "lint": "./node_modules/.bin/eslint **/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

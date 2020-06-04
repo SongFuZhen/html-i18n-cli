@@ -5,7 +5,13 @@
 ## 安装
 
 ``` sh
-npm i -g html-i18n-cli
+1. 安装 Node.js
+
+2. npm install 
+
+3. 安装 yarn 代替 npm （可选）
+npm i -g yarn 
+
 ```
 
 ## 使用
@@ -13,7 +19,9 @@ npm i -g html-i18n-cli
 1. 生成 JSON 文件
 
 ``` sh
-html parse test.html
+npm run parse test/test.html
+
+// yarn parse test/test.html
 ```
 
 2. 翻译 JSON 文件
@@ -21,7 +29,9 @@ html parse test.html
 > 输入两次 Ctrl + C 终止，机翻后可手动校对
 
 ``` sh
-html translate test.json
+npm run trans test/test.json -t en
+
+// 或 yarn trans test/test.json -t en
 ```
 
   * -t zh 指定[目标语言](http://api.fanyi.baidu.com/doc/21)
@@ -30,7 +40,7 @@ html translate test.json
 3. 还原 HTML 文件
 
 ``` sh
-html render test.html test.json
+node ./bin/html.js render test.html test.json
 ```
 
 ## 附加功能
@@ -38,11 +48,11 @@ html render test.html test.json
 * JSON 转 EXCEL
 
 ``` sh
-html convert test.json
+node ./bin/html.js convert test.json
 ```
 
 * EXCEL 转 JSON
 
 ``` sh
-html convert test.xlsx
+node ./bin/html.js convert test.xlsx
 ```
